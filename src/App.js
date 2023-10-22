@@ -8,7 +8,7 @@ import About from './pages/About';
 import Locations from './pages/Locations';
 import Error from './pages/Error';
 
-
+//rout pages
 function App() {
   return (
     <>

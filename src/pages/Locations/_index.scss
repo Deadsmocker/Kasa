@@ -1,5 +1,6 @@
 @import '../../style/utilities/mixins';
 
+//section description
 .description-section {
     display: flex;
     justify-content: space-between;
@@ -106,6 +107,7 @@
     
     
 }
+//contnair
 .collapsible__container{
     display: flex;
     justify-content: space-between;

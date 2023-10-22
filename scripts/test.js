@@ -6,8 +6,7 @@ process.env.NODE_ENV = 'test';
 process.env.PUBLIC_URL = '';
 
 // Makes the script crash on unhandled rejections instead of silently
-// ignoring them. In the future, promise rejections that are not handled will
-// terminate the Node.js process with a non-zero exit code.
+
 process.on('unhandledRejection', err => {
   throw err;
 });
@@ -43,7 +42,6 @@ if (
   argv.indexOf('--watchAll') === -1 &&
   argv.indexOf('--watchAll=false') === -1
 ) {
-  // https://github.com/facebook/create-react-app/issues/5210
   const hasSourceControl = isInGitRepository() || isInMercurialRepository();
   argv.push(hasSourceControl ? '--watch' : '--watchAll');
 }
